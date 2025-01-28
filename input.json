@@ -1,0 +1,21 @@
+{
+    "mentor": {
+        "3DModel": "3D_Model/DPMentor.npy",
+        "annotate": "annotate/DPMentor.json",
+        "video": "video/DPMentor.mp4"
+    },
+    "convalescent": {
+        "front": {
+            "3DModel": "3D_Model/DPConvalescent.npy",
+            "video": "video/DPConvalescent.mp4"
+        },
+        "right": {
+            "3DModel": "3D_Model/DPConvalescentRight.npy",
+            "video": "video/DPConvalescentRight.mp4"
+        },
+        "left": {
+            "3DModel": "3D_Model/DPConvalescentLeft.npy",
+            "video": "video/DPConvalescentLeft.mp4"
+        }
+    }
+}

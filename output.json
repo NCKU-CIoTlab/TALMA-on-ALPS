@@ -1,0 +1,107 @@
+[
+    {
+        "video_title": "Front",
+        "mentor_anchor_frames": [
+            "39",
+            "93",
+            "140",
+            "189",
+            "256",
+            "297",
+            "334",
+            "412",
+            "459",
+            "507",
+            "553"
+        ],
+        "matching_result": [
+            61,
+            106,
+            152,
+            197,
+            265,
+            300,
+            336,
+            449,
+            488,
+            532,
+            563
+        ]
+    },
+    {
+        "message": "The 'Visualize TALMA Matching Behavior' chart was successfully generated and saved as 'fig(2025-01-28_22_25_50)/TALMA P3Matching(Front-Front).png'."
+    },
+    {
+        "message": "The 'Matching Picture Pairs' were successfully generated and saved in the 'fig(2025-01-28_22_25_50)/Front-Front/' folder."
+    },
+    {
+        "video_title": "Right",
+        "mentor_anchor_frames": [
+            "39",
+            "93",
+            "140",
+            "189",
+            "256",
+            "297",
+            "334",
+            "412",
+            "459",
+            "507",
+            "553"
+        ],
+        "matching_result": [
+            83,
+            133,
+            179,
+            224,
+            285,
+            321,
+            360,
+            475,
+            514,
+            557,
+            592
+        ]
+    },
+    {
+        "message": "The 'Visualize TALMA Matching Behavior' chart was successfully generated and saved as 'fig(2025-01-28_22_25_50)/TALMA P3Matching(Front-Right).png'."
+    },
+    {
+        "message": "The 'Matching Picture Pairs' were successfully generated and saved in the 'fig(2025-01-28_22_25_50)/Front-Right/' folder."
+    },
+    {
+        "video_title": "Left",
+        "mentor_anchor_frames": [
+            "39",
+            "93",
+            "140",
+            "189",
+            "256",
+            "297",
+            "334",
+            "412",
+            "459",
+            "507",
+            "553"
+        ],
+        "matching_result": [
+            12,
+            58,
+            103,
+            145,
+            218,
+            290,
+            321,
+            399,
+            442,
+            486,
+            594
+        ]
+    },
+    {
+        "message": "The 'Visualize TALMA Matching Behavior' chart was successfully generated and saved as 'fig(2025-01-28_22_25_50)/TALMA P3Matching(Front-Left).png'."
+    },
+    {
+        "message": "The 'Matching Picture Pairs' were successfully generated and saved in the 'fig(2025-01-28_22_25_50)/Front-Left/' folder."
+    }
+]
