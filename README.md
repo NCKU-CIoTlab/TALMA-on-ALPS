@@ -15,23 +15,33 @@ Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision*
 
 ## 🚀 How to Run TALMA-on-ALPS
 
-TALMA-on-ALPS provides a ready-to-use **Windows and MacOS executable** (`PVM_test.exe`) for physiotherapy video matching. Follow these steps to **download, set up the environment, and execute the program**.
+TALMA-on-ALPS provides **precompiled executables** for **Windows, macOS, and Linux**.  
+Follow the instructions below to **download, set up the environment, and execute the program** based on your operating system.
 
 ### 1️⃣ **Clone Repository with Git LFS**
-⚠️ **Warning:** If you download this repository as a ZIP file from GitHub, the large binary files (such as `.exe` files) and video files will not be included.
+⚠️ **Important:**  
+**Do not download the repository as a ZIP file from GitHub!**  
+ZIP downloads **do not include large binary files** (e.g., `.exe`, `.mac`, `.linux`).  
+Instead, **install Git LFS and use `git clone`** to properly fetch all files.
 
-To correctly download the repository and its large files, you must **install Git LFS** and use `git clone`:
+#### **🔹 Install Git LFS**
+##### **For Windows**  
+Download and install Git LFS from: [https://git-lfs.github.com](https://git-lfs.github.com)  
+Then, initialize Git LFS:
+```powershell
+git lfs install
+```
+
+##### **For macOS (Homebrew)**
 ```bash
-#### **🔹 Install Git LFS on Ubuntu/macOS**
+brew install git-lfs
+git lfs install
+```
+
+##### **For Ubuntu (Linux)**
 ```bash
-# Ubuntu
 sudo apt update
 sudo apt install git-lfs
-
-git lfs install
-
-# macOS
-brew install git-lfs
 git lfs install
 ```
 
@@ -42,8 +52,9 @@ git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git
 cd TALMA-on-ALPS
 ```
 
-#### **🔹 Pull Large Files**
-Usually, `git clone` will automatically pull large files if you have already installed LFS. If it doesn't, you can manually pull large files using:
+#### **🔹 Pull Large Files (if necessary)**
+Usually, `git clone` will automatically pull large files if Git LFS is installed.  
+If large files are missing, manually pull them with:
 ```bash
 git lfs pull
 ```
@@ -51,21 +62,36 @@ git lfs pull
 ---
 
 ### **2️⃣ Run the Prediction Program**
-Run the executable file to start the physiotherapy video matching process:
-```bash
+Choose the appropriate executable for your **operating system**:
+
+#### **🔹 Windows**
+```powershell
 ./PVM_test.exe
 ```
+
+#### **🔹 macOS**
+```bash
+chmod +x PVM_test.mac
+./PVM_test.mac
+```
+
+#### **🔹 Linux (Ubuntu)**
+```bash
+chmod +x PVM_test.linux
+./PVM_test.linux
+```
+
 This program will:
 - Read the **`input.json`** file to load the necessary mentor and convalescent data.
-- Perform movement matching using the TALMA-on-ALPS algorithm.
-- Generate results in a new folder named with the current execution date and time.
-- Save logs and matching outputs in `output.json`.
+- Perform movement matching using the **TALMA-on-ALPS** algorithm.
+- Generate results in a **timestamped folder** with **predicted matching outputs**.
+- Save logs and execution outputs in **`output.json`**.
 
 ---
 
 ## 📌 Customizing `input.json`
-By default, the required input files are already specified in `input.json`.  
-If you want to **use your own rehabilitation recordings**, modify `input.json` with the correct file paths.
+By default, `input.json` is preconfigured with required files.  
+To **use your own physiotherapy recordings**, modify `input.json` with your file paths.
 
 Example `input.json`:
 ```json
@@ -91,12 +117,12 @@ Example `input.json`:
     ]
 }
 ```
-If you only have **one** convalescent video, set all three (front, right, left) paths to the same file.
+**📌 If you only have one convalescent video, set all three (front, right, left) to the same file.**
 
 ---
 
 ## 📂 Understanding the Output
-Once `PVM_test.exe` completes execution, it generates output files in a **timestamped folder**, structured as follows:
+Once the program finishes execution, it generates **output files** in a **timestamped folder**, structured as follows:
 
 ```
 fig(YYYY-MM-DD_HH_MM_SS)/
@@ -128,8 +154,8 @@ fig(YYYY-MM-DD_HH_MM_SS)/
 | **Step** | **Command** | **Description** |
 |----------|------------|----------------|
 | **1️⃣ Clone Repository** | `git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git` | Download project files |
-| **2️⃣ Install Dependencies** | `pip install -r requirements.txt` | *(Optional)* Install required libraries |
-| **3️⃣ Run the Program** | `./PVM_test.exe` | Execute prediction |
+| **2️⃣ Install Git LFS** | *(See installation guide above)* | Required for large files |
+| **3️⃣ Run the Program** | **Windows:** `./PVM_test.exe` <br> **macOS:** `./PVM_test.mac` <br> **Linux:** `./PVM_test.linux` | Start matching process |
 | **4️⃣ Customize Input** | Edit `input.json` | Use your own 3D models and videos |
 | **5️⃣ Check Output** | Look in `fig(YYYY-MM-DD_HH_MM_SS)/` | View results |
 
