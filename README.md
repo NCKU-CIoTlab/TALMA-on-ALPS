@@ -15,21 +15,36 @@ Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision*
 
 ## 🚀 How to Run TALMA-on-ALPS
 
-TALMA-on-ALPS provides a ready-to-use **Windows executable** (`PVM_test.exe`) for physiotherapy video matching. Follow these steps to **download, set up the environment, and execute the program**.
+TALMA-on-ALPS provides a ready-to-use **Windows and MacOS executable** (`PVM_test.exe`) for physiotherapy video matching. Follow these steps to **download, set up the environment, and execute the program**.
 
 ### 1️⃣ **Clone Repository with Git LFS**
 ⚠️ **Warning:** If you download this repository as a ZIP file from GitHub, the large binary files (such as `.exe` files) and video files will not be included.
 
 To correctly download the repository and its large files, you must **install Git LFS** and use `git clone`:
 ```bash
-# 1️⃣ Install Git LFS (Skip if already installed)
+#### **🔹 Install Git LFS on Ubuntu/macOS**
+```bash
+# Ubuntu
+sudo apt update
+sudo apt install git-lfs
+
 git lfs install
 
-# 2️⃣ Clone the repository with LFS support
+# macOS
+brew install git-lfs
+git lfs install
+```
+
+#### **🔹 Clone the repository**
+Once Git LFS is installed, you can clone the repository:
+```bash
 git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git
 cd TALMA-on-ALPS
+```
 
-# 3️⃣ Pull large files
+#### **🔹 Pull Large Files**
+Usually, `git clone` will automatically pull large files if you have already installed LFS. If it doesn't, you can manually pull large files using:
+```bash
 git lfs pull
 ```
 
