@@ -1,7 +1,15 @@
 # TALMA-on-ALPS
 
-This repository contains the demo code for our research work:  
+This repository contains the demo code and techincal report for our research work:  
 **"A Physiotherapy Video Matching Method Supporting Arbitrary Camera Placement via Angle-of-Limb-based Posture Structures."**  
+
+## 📑 Technical Report  
+📄 **`2025_TALMA-on-ALPS--Technical-Report.pdf`**  
+
+This report extends the content of our submitted paper by including an additional **Appendix** section, which provides:  
+- **A. Impact of Matching Quality Threshold (θ_sim)**  
+- **B. Impact of Re-Matching Control Parameter (ϕ)**  
+These sections contain **experimental results and analysis** that further illustrate the effectiveness of TALMA-on-ALPS.
 
 TALMA-on-ALPS is a physiotherapy video matching system designed to **align patient rehabilitation movements with mentor demonstrations, even when captured from different camera angles**.  
 To overcome the challenges caused by **arbitrary camera placement**, we introduce the **Angle-of-Limb-based Posture Structure (ALPS)** and a **Camera-Angle-Free (CAFE) transformation**, which enable robust matching of physiotherapy exercises regardless of camera positioning.  
