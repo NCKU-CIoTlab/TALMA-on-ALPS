@@ -7,8 +7,8 @@ This repository contains the demo code and techincal report for our research wor
 📄 **`2025_TALMA-on-ALPS--Technical-Report.pdf`**  
 
 This report extends the content of our submitted paper by including an additional **Appendix** section, which provides:  
-- **A. Impact of Matching Quality Threshold (θ_sim)**  
-- **B. Impact of Re-Matching Control Parameter (ϕ)**  
+- **A. Impact of Matching Quality Threshold** (θ_sim)  
+- **B. Impact of Re-Matching Control Parameter** ($\phi$)  
 These sections contain **experimental results and analysis** that further illustrate the effectiveness of TALMA-on-ALPS.
 
 ---
