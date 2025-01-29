@@ -17,12 +17,20 @@ Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision*
 
 TALMA-on-ALPS provides a ready-to-use **Windows executable** (`PVM_test.exe`) for physiotherapy video matching. Follow these steps to **download, set up the environment, and execute the program**.
 
-### **1️⃣ Clone the Repository**
+### 1️⃣ **Clone Repository with Git LFS**
+⚠️ **Warning:** If you download this repository as a ZIP file from GitHub, the large binary files (such as `.exe` files) will not be included.
+
+To correctly download the repository and its large files, you must **install Git LFS** and use `git clone`:
 ```bash
+# 1️⃣ Install Git LFS (Skip if already installed)
+git lfs install
+
+# 2️⃣ Clone the repository with LFS support
 git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git
 cd TALMA-on-ALPS
-```
-This will download the project repository and navigate into the project folder.
+
+# 3️⃣ Pull large files
+git lfs pull
 
 ---
 
