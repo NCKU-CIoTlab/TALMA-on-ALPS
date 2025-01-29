@@ -31,6 +31,7 @@ cd TALMA-on-ALPS
 
 # 3️⃣ Pull large files
 git lfs pull
+```
 
 ---
 
