@@ -31,7 +31,7 @@ Follow the instructions below to **download, set up the environment, and execute
 ### 1️⃣ **Clone Repository with Git LFS**
 ⚠️ **Important:**  
 **Do not download the repository as a ZIP file from GitHub!**  
-ZIP downloads **do not include large binary files** (e.g., `.exe`, `.mac`, `.linux`).  
+ZIP downloads **do not include large binary files** (e.g., `.exe`, `.mac`, `.linux`) and video files.  
 Instead, **install Git LFS and use `git clone`** to properly fetch all files.
 
 #### **🔹 Install Git LFS**
