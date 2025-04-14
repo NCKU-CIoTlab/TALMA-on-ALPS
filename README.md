@@ -37,10 +37,11 @@ cd TALMA-on-ALPS
 ---
 
 ### **2️⃣ Download the execution file**
-You can download the execution file at [here](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing)
-📁 After Downloading
+You can download the execution file at [here](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing).
+#### 📁 After Downloading
 
 Please place the downloaded file(s) directly into the root directory of this project, so the folder structure looks like this:
+```
 your-project-folder/
 ├── 3D_Model/
 ├── images/
@@ -55,6 +56,7 @@ your-project-folder/
 ├── PVM_test.exe          ← (if you're on Windows)
 ├── PVM_test.linux        ← (if you're on Linux)
 ├── PVM_test.mac          ← (if you're on macOS)
+```
 
 ### **3️⃣ Run the Prediction Program**
 Choose the appropriate executable for your **operating system**:
