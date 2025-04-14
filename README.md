@@ -28,48 +28,16 @@ Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision*
 TALMA-on-ALPS provides **precompiled executables** for **Windows, macOS, and Linux**.  
 Follow the instructions below to **download, set up the environment, and execute the program** based on your operating system.
 
-### 1️⃣ **Clone Repository with Git LFS**
-⚠️ **Important:**  
-**Do not download the repository as a ZIP file from GitHub!**  
-ZIP downloads **do not include large binary files** (e.g., `.exe`, `.mac`, `.linux`) and video files.  
-Instead, **install Git LFS and use `git clone`** to properly fetch all files.
-
-#### **🔹 Install Git LFS**
-##### **For Windows**  
-Download and install Git LFS from: [https://git-lfs.github.com](https://git-lfs.github.com)  
-Then, initialize Git LFS:
-```powershell
-git lfs install
-```
-
-##### **For macOS (Homebrew)**
-```bash
-brew install git-lfs
-git lfs install
-```
-
-##### **For Ubuntu (Linux)**
-```bash
-sudo apt update
-sudo apt install git-lfs
-git lfs install
-```
 
 #### **🔹 Clone the repository**
-Once Git LFS is installed, you can clone the repository:
 ```bash
 git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git
 cd TALMA-on-ALPS
 ```
-
-#### **🔹 Pull Large Files (if necessary)**
-Usually, `git clone` will automatically pull large files if Git LFS is installed.  
-If large files are missing, manually pull them with:
-```bash
-git lfs pull
-```
-
 ---
+
+### **2️⃣ Download the execution file**
+You can download the execution file at [here](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing)
 
 ### **2️⃣ Run the Prediction Program**
 Choose the appropriate executable for your **operating system**:
