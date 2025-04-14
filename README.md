@@ -29,7 +29,7 @@ TALMA-on-ALPS provides **precompiled executables** for **Windows, macOS, and Lin
 Follow the instructions below to **download, set up the environment, and execute the program** based on your operating system.
 
 
-#### **🔹 Clone the repository**
+#### **1️⃣ Clone the repository**
 ```bash
 git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git
 cd TALMA-on-ALPS
@@ -39,7 +39,7 @@ cd TALMA-on-ALPS
 ### **2️⃣ Download the execution file**
 You can download the execution file at [here](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing)
 
-### **2️⃣ Run the Prediction Program**
+### **3️⃣ Run the Prediction Program**
 Choose the appropriate executable for your **operating system**:
 
 #### **🔹 Windows**
@@ -132,7 +132,7 @@ fig(YYYY-MM-DD_HH_MM_SS)/
 | **Step** | **Command** | **Description** |
 |----------|------------|----------------|
 | **1️⃣ Clone Repository** | `git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git` | Download project files |
-| **2️⃣ Install Git LFS** | *(See installation guide above)* | Required for large files |
+| **2️⃣ Download the execution file** | *(See download guide above)* | Download from Google Cloud |
 | **3️⃣ Run the Program** | **Windows:** `./PVM_test.exe` <br> **macOS:** `./PVM_test.mac` <br> **Linux:** `./PVM_test.linux` | Start matching process |
 | **4️⃣ Customize Input** | Edit `input.json` | Use your own 3D models and videos |
 | **5️⃣ Check Output** | Look in `fig(YYYY-MM-DD_HH_MM_SS)/` | View results |
