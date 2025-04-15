@@ -43,9 +43,7 @@ The following files are **not included** in this repository due to size limitati
 - `PVM_test.exe`, `PVM_test.linux`, `PVM_test.mac` (precompiled executables)
 - `input_video/` folder (physiotherapy videos used for prediction)
 
-You can download all of them from the following Google Drive link:
-
-👉 [Download Required Files from Google Drive]([https://your-google-drive-link.com](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing))
+You can download all of them from the following Google Drive [link](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing):
 
 #### 📁 After Downloading
 
