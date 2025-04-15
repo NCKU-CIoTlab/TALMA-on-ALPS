@@ -1,5 +1,0 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-PVM_test filter=lfs diff=lfs merge=lfs -text
-*.exe filter=lfs diff=lfs merge=lfs -text
-PVM_test.linux filter=lfs diff=lfs merge=lfs -text
-PVM_test.mac filter=lfs diff=lfs merge=lfs -text
