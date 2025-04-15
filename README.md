@@ -53,9 +53,9 @@ your-project-folder/
 ├── 3D_Model/
 ├── images/
 ├── input_video/
-   ├── DPConvalescent.mp4
-   ├── DPConvalescentLeft.mp4
-   ├── DPConvalescentRight.mp4
+   └── DPConvalescent.mp4
+   └── DPConvalescentLeft.mp4
+   └── DPConvalescentRight.mp4
 ├── demo_video.mp4
 ├── fig(2025-01-28_22_25_50)/
 ├── input.json
