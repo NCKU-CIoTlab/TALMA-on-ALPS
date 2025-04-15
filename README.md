@@ -36,8 +36,20 @@ cd TALMA-on-ALPS
 ```
 ---
 
-### **2️⃣ Download the execution file**
-You can download the execution file at [here](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing).
+### **2️⃣ Download the required files (Executables + Input Videos)**
+
+The following files are **not included** in this repository due to size limitations:
+
+- `PVM_test.exe`, `PVM_test.linux`, `PVM_test.mac` (precompiled executables)
+- `input_video/` folder (physiotherapy videos used for prediction)
+
+You can download all of them from the following Google Drive link:
+
+👉 [Download Required Files from Google Drive]([https://your-google-drive-link.com](https://drive.google.com/drive/folders/16_H5DXaXWCRT2OMF2ucPRLodk5s9K9nh?usp=sharing))
+
+#### 📁 After Downloading
+
+Place the downloaded files into the **root directory** of the repository. Your project folder should look like this:
 #### 📁 After Downloading
 
 Please place the downloaded file(s) directly into the root directory of this project, so the folder structure looks like this:
@@ -46,6 +58,9 @@ your-project-folder/
 ├── 3D_Model/
 ├── images/
 ├── input_video/
+│   ├── DPConvalescent.mp4
+│   ├── DPConvalescentLeft.mp4
+│   ├── DPConvalescentRight.mp4
 ├── demo_video.mp4
 ├── fig(2025-01-28_22_25_50)/
 ├── input.json
