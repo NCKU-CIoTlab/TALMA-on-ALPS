@@ -16,6 +16,8 @@ These sections contain **experimental results and analysis** that further illust
 TALMA-on-ALPS is a physiotherapy video matching system designed to **align patient rehabilitation movements with mentor demonstrations, even when captured from different camera angles**.
 To overcome the challenges caused by **arbitrary camera placement**, we propose the **Angle-of-Limb-based Posture Structure (ALPS)** and a **Camera-Angle-Free (CAFE) transformation**, which enable robust matching of physiotherapy exercises regardless of camera positioning.
 
+![TALMA-on-ALPS pipeline](https://github.com/NCKU-CIoTlab/TALMA-on-ALPS/blob/main/images/pipeline.png?raw=true)
+
 Our pipeline utilizes existing state-of-the-art pose estimation methods for constructing the 3D posture model of each subject. Specifically:
 
 - [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) for 2D human pose estimation.
