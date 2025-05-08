@@ -1,22 +1,33 @@
 # TALMA-on-ALPS
 
-This repository contains the demo code and techincal report for our research work:  
-**"A Physiotherapy Video Matching Method Supporting Arbitrary Camera Placement via Angle-of-Limb-based Posture Structures."**  
+This repository contains the demo code and techincal report for our research work:
+**"A Physiotherapy Video Matching Method Supporting Arbitrary Camera Placement via Angle-of-Limb-based Posture Structures."**
 
-## 📑 Technical Report  
-📄 **`2025_TALMA-on-ALPS--Technical-Report.pdf`**  
+## 📑 Technical Report
+You can read the full **technical report** with extended experiments in  
+📄 **[2025_TALMA-on-ALPS--Technical-Report.pdf](./2025_TALMA-on-ALPS--Technical-Report.pdf)**
 
-This report extends the content of our submitted paper by including an additional **Appendix** section, which provides:  
-- **A. Impact of Matching Quality Threshold** (θ_{sim})  
-- **B. Impact of Re-Matching Control Parameter** ($\phi$)  
+This report extends the content of our submitted paper by including an additional **Appendix** section, which provides:
+- **A. Impact of Matching Quality Threshold** (θ_{sim})
+- **B. Impact of Re-Matching Control Parameter** ($\phi$)
 These sections contain **experimental results and analysis** that further illustrate the effectiveness of TALMA-on-ALPS.
 
 ---
 
-TALMA-on-ALPS is a physiotherapy video matching system designed to **align patient rehabilitation movements with mentor demonstrations, even when captured from different camera angles**.  
-To overcome the challenges caused by **arbitrary camera placement**, we introduce the **Angle-of-Limb-based Posture Structure (ALPS)** and a **Camera-Angle-Free (CAFE) transformation**, which enable robust matching of physiotherapy exercises regardless of camera positioning.  
+TALMA-on-ALPS is a physiotherapy video matching system designed to **align patient rehabilitation movements with mentor demonstrations, even when captured from different camera angles**.
+To overcome the challenges caused by **arbitrary camera placement**, we introduce the **Angle-of-Limb-based Posture Structure (ALPS)** and a **Camera-Angle-Free (CAFE) transformation**, which enable robust matching of physiotherapy exercises regardless of camera positioning.
 
-Our approach formulates **physiotherapy video matching** as an optimization problem and solves it using a **three-phase ALPS matching algorithm (TALMA)**.  
+Our pipeline utilizes existing state-of-the-art pose estimation methods for constructing the 3D posture model of each subject. Specifically:
+
+We apply AlphaPose for 2D human pose estimation.
+
+The 2D keypoints are then lifted to 3D space using Dual-stream Spatio-temporal Transformer (DST).
+
+These two components are integrated as part of our implementation of the abstract modules PHP-Net and 3DPHP-Net, which realize the functions $F_{PHP}$ and $F_{3DPHP}$ defined in our formulation.
+
+We emphasize that while AlphaPose and MotionBERT are adopted for keypoint extraction, the system design and transformation logic in TALMA-on-ALPS is original. Notably, we propose the CAFE transformation, which converts 3D keypoint data into our ALPS representation---a novel angle-of-limb based structure that is robust to camera-angle variations. This transformation plays a crucial role in enabling the TALMA matching algorithm to operate across arbitrary viewpoints.
+
+Our approach formulates **physiotherapy video matching** as an optimization problem and solves it using a **three-phase ALPS matching algorithm (TALMA)**.
 Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision**, with time differences **under 0.07 seconds** from expert-annotated ground truths.
 
 ![TALMA-on-ALPS Demo](https://github.com/NCKU-CIoTlab/TALMA-on-ALPS/blob/main/images/demo_picture.jpg?raw=true)
@@ -25,7 +36,7 @@ Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision*
 
 ## 🚀 How to Run TALMA-on-ALPS
 
-TALMA-on-ALPS provides **precompiled executables** for **Windows, macOS, and Linux**.  
+TALMA-on-ALPS provides **precompiled executables** for **Windows, macOS, and Linux**.
 Follow the instructions below to **download, set up the environment, and execute the program** based on your operating system.
 
 
