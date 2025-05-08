@@ -34,7 +34,7 @@ TALMA-on-ALPS provides **precompiled executables** for **Windows, macOS, and Lin
 Follow the instructions below to **download, set up the environment, and execute the program** based on your operating system.
 
 
-#### **1️⃣ Clone the repository**
+### **1️⃣ Clone the repository**
 ```bash
 git clone https://github.com/NCKU-CIoTlab/TALMA-on-ALPS.git
 cd TALMA-on-ALPS
