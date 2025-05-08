@@ -1,6 +1,6 @@
 # TALMA-on-ALPS
 
-This repository contains the demo code and techincal report with extended experiments for our research work:
+This repository contains the demo code and techincal report for our research work:
 **"A Physiotherapy Video Matching Method Supporting Arbitrary Camera Placement via Angle-of-Limb-based Posture Structures."**
 
 ## 📑 Technical Report 
@@ -18,8 +18,8 @@ To overcome the challenges caused by **arbitrary camera placement**, we introduc
 
 Our pipeline utilizes existing state-of-the-art pose estimation methods for constructing the 3D posture model of each subject. Specifically:
 
-- **A. We apply AlphaPose for 2D human pose estimation.
-- **B. The 2D keypoints are then lifted to 3D space using Dual-stream Spatio-temporal Transformer (DST).
+- A. We apply AlphaPose for 2D human pose estimation.
+- B. The 2D keypoints are then lifted to 3D space using Dual-stream Spatio-temporal Transformer (DST).
 
 These two components are integrated as part of our implementation of the abstract modules PHP-Net and 3DPHP-Net, which realize the functions $F_{PHP}$ and $F_{3DPHP}$ defined in our formulation.
 
