@@ -14,16 +14,12 @@ These sections contain **experimental results and analysis** that further illust
 ---
 
 TALMA-on-ALPS is a physiotherapy video matching system designed to **align patient rehabilitation movements with mentor demonstrations, even when captured from different camera angles**.
-To overcome the challenges caused by **arbitrary camera placement**, we introduce the **Angle-of-Limb-based Posture Structure (ALPS)** and a **Camera-Angle-Free (CAFE) transformation**, which enable robust matching of physiotherapy exercises regardless of camera positioning.
+To overcome the challenges caused by **arbitrary camera placement**, we propose the **Angle-of-Limb-based Posture Structure (ALPS)** and a **Camera-Angle-Free (CAFE) transformation**, which enable robust matching of physiotherapy exercises regardless of camera positioning.
 
 Our pipeline utilizes existing state-of-the-art pose estimation methods for constructing the 3D posture model of each subject. Specifically:
 
-- A. AlphaPose for 2D human pose estimation.
-- B. Dual-stream Spatio-temporal Transformer (DST) for lifting 2D keypoints to 3D space.
-
-These two components are integrated as part of our implementation of the abstract modules PHP-Net and 3DPHP-Net, which realize the functions $F_{PHP}$ and $F_{3DPHP}$ defined in our formulation.
-
-We emphasize that while AlphaPose and MotionBERT are adopted for keypoint extraction, the system design and transformation logic in TALMA-on-ALPS is original. Notably, we propose the CAFE transformation, which converts 3D keypoint data into our ALPS representation---a novel angle-of-limb based structure that is robust to camera-angle variations. This transformation plays a crucial role in enabling the TALMA matching algorithm to operate across arbitrary viewpoints.
+- AlphaPose for 2D human pose estimation.
+- Dual-stream Spatio-temporal Transformer (DST) for lifting 2D keypoints to 3D space.
 
 Our approach formulates **physiotherapy video matching** as an optimization problem and solves it using a **three-phase ALPS matching algorithm (TALMA)**.
 Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision**, with time differences **under 0.07 seconds** from expert-annotated ground truths.
