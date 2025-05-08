@@ -21,7 +21,7 @@ Our pipeline utilizes existing state-of-the-art pose estimation methods for cons
 - A. AlphaPose for 2D human pose estimation.
 - B. Dual-stream Spatio-temporal Transformer (DST) for lifting 2D keypoints to 3D space.
 
-These two components are integrated as part of our implementation of the abstract modules PHP-Net and 3DPHP-Net, which realize the functions 、$F_{PHP}$ and $F_{3DPHP}$ defined in our formulation.
+These two components are integrated as part of our implementation of the abstract modules PHP-Net and 3DPHP-Net, which realize the functions $F_{PHP}$ and $F_{3DPHP}$ defined in our formulation.
 
 We emphasize that while AlphaPose and MotionBERT are adopted for keypoint extraction, the system design and transformation logic in TALMA-on-ALPS is original. Notably, we propose the CAFE transformation, which converts 3D keypoint data into our ALPS representation---a novel angle-of-limb based structure that is robust to camera-angle variations. This transformation plays a crucial role in enabling the TALMA matching algorithm to operate across arbitrary viewpoints.
 
