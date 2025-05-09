@@ -23,6 +23,9 @@ Our pipeline utilizes existing state-of-the-art pose estimation methods for cons
 - [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) for 2D human pose estimation.
 - [Dual-stream Spatio-temporal Transformer (DST)](https://github.com/eth-ait/motion-transformer) for lifting 2D keypoints to 3D space.
 
+These models are not developed by us and are used only as components within PHP-Net and 3DPHP-Net.
+Our original contributions are ALPS, CAFE, and TALMA. Please refer to Section I and IV of the paper for further clarification.
+
 Our approach formulates **physiotherapy video matching** as an optimization problem and solves it using a **three-phase ALPS matching algorithm (TALMA)**.
 Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision**, with time differences **under 0.07 seconds** from expert-annotated ground truths.
 
