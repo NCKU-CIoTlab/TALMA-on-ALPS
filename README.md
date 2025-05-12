@@ -31,7 +31,7 @@ Real-world experiments demonstrate that TALMA-on-ALPS achieves **high precision*
 
 ![TALMA-on-ALPS Demo](https://github.com/NCKU-CIoTlab/TALMA-on-ALPS/blob/main/images/demo_picture.jpg?raw=true)
 
-🔗 **Demo video:** Download **`./TALMA by ALPS Full Demo (annoynous).mp4`** or [watch on YouTube](https://youtu.be/Yh6HtUwMSVU).
+🔗 **Demo video:** Download **`./Full_Demo(anonymous).mp4`** or [watch on YouTube](https://youtu.be/Yh6HtUwMSVU).
 
 ## 🚀 How to Run TALMA-on-ALPS
 
